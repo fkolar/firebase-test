@@ -7,7 +7,7 @@
     "build": "nx build",
     "test": "nx test",
     "emulator:setjava": "/usr/libexec/java_home -v 11.0.21 ",
-    "firestore:test": "npm run emulator:setjava && npx --yes firebase-tools emulators:exec --project xxxx --only firestore  \"nx test\""
+    "firestore:test": "npm run emulator:setjava && npx --yes firebase-tools emulators:exec --project relloca-tes --only firestore  \"nx test\""
   },
   "private": true,
   "dependencies": {
