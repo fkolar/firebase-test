@@ -1,0 +1,8 @@
+1. added global firebase
+2. firebase init // linked to my existing project
+3. firebase init emulators // enabled only firestore
+4. npm i @angular/fire //  uses latest version
+5. removed default spec and created new firestore.spec.ts
+5. set java for emulator as it does not work with 1.8 emulator:setjava
+6. added command "firestore:test": "npx --yes firebase-tools emulators:exec --project xxxx --only firestore  \"nx test\""
+

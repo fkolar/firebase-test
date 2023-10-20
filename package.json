@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "emulator:setjava": "/usr/libexec/java_home -v 11.0.21 ",
+    "firestore:test": "npm run emulator:setjava && npx --yes firebase-tools emulators:exec --project xxxx --only firestore  \"nx test\""
   },
   "private": true,
   "dependencies": {
@@ -13,6 +15,7 @@
     "@angular/common": "~16.2.0",
     "@angular/compiler": "~16.2.0",
     "@angular/core": "~16.2.0",
+    "@angular/fire": "^7.6.1",
     "@angular/forms": "~16.2.0",
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
